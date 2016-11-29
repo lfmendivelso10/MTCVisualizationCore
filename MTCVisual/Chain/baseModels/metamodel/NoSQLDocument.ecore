@@ -11,35 +11,24 @@
         upperBound="-1" eType="#//Document" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Document">
-    <eAnnotations source="Cluster"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fields" lowerBound="1"
-        upperBound="-1" eType="#//Field" containment="true">
-      <eAnnotations source="ClusteredElements"/>
-    </eStructuralFeatures>
+        upperBound="-1" eType="#//Field" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FieldReference" eSuperTypes="#//Field">
-    <eAnnotations source="Relationship"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1" eType="#//Document">
-      <eAnnotations source="source"/>
-    </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="to" lowerBound="1" eType="#//Document">
-      <eAnnotations source="target"/>
-    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1" eType="#//Document"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" lowerBound="1" eType="#//Document"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FieldBoolean" eSuperTypes="#//Field">
-    <eAnnotations source="ClusteredElement"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FieldString" eSuperTypes="#//Field">
-    <eAnnotations source="ClusteredElement"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Field" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FieldNumber" eSuperTypes="#//Field">
-    <eAnnotations source="ClusteredElement"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
   </eClassifiers>
 </ecore:EPackage>
