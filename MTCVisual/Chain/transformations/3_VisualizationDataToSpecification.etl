@@ -213,11 +213,10 @@ operation generateDiagramType2(cluster : Data!Cluster, viewpoint : Sirius!Viewpo
 		eNode.semanticCandidatesExpression = "[ self."+element.elementsQuery+" /]";
 		
 		//Add Style to the Cluster Representation
-		var eNodeStyle = new Sirius!EllipseNodeDescription();
-		eNodeStyle.horizontalDiameterComputationExpression = "12";
-		eNodeStyle.verticalDiameterComputationExpression = "12";
-		
-		// Set Color and default parametres to the Cluster Representation
+		var eNodeStyle = new Sirius!SquareDescription();
+		eNodeStyle.height = 7;
+		eNodeStyle.width = 14;
+
 		var color = Sirius!SystemColor.allInstances().select(c|c.name='light_blue').first();
 		eNodeStyle.color = color;
 		eNodeStyle.labelAlignment = Sirius!LabelAlignment#CENTER;
@@ -309,7 +308,7 @@ operation generateDiagramType3(cluster : Data!Cluster, viewpoint : Sirius!Viewpo
 		eNodeStyle.height = 7;
 		eNodeStyle.width = 14;
 
-		var color = Sirius!SystemColor.allInstances().select(c|c.name='light_purple').first();
+		var color = Sirius!SystemColor.allInstances().select(c|c.name='light_blue').first();
 		eNodeStyle.color = color;
 		eNodeStyle.labelAlignment = Sirius!LabelAlignment#CENTER;
 		eNodeStyle.labelPosition = Sirius!LabelPosition#node;
