@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <couchdb_:Server xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:couchdb_="http://www.uniandes.edu.co/metamodel/couchdb" URL="http://sistemas.uniandes.edu.co/couchdb" version="1.0">
-  <database path="/pokemon" name="Pokemons" version="1.0">
+  <database path="/trainers" name="Trainers" version="1.0">
     <document id="2cc26f58-b7d6-11e6-80f5-76304dec7eb7" name="Misty" version="2">
       <field xsi:type="couchdb_:TextField" name="full_name" value="Misty"/>
       <field xsi:type="couchdb_:TextField" name="citizen" value="Heavenly city"/>
@@ -14,7 +14,7 @@
       <field xsi:type="couchdb_:TextField" name="citizen" value="Silver City"/>
     </document>
   </database>
-  <database path="/trainer" name="trainers" version="1.0">
+  <database path="/pokemons" name="Pokemons" version="1.0">
     <document id="2cc26e90-b7d6-11e6-80f5-76304dec7eb7" name="Onix" version="1.0">
       <field xsi:type="couchdb_:NumberField" name="number" value="95.0"/>
       <field xsi:type="couchdb_:TextField" name="name" value="Onix"/>
