@@ -5,11 +5,11 @@
       <field xsi:type="couchdb_:TextField" name="full_name" value="Misty"/>
       <field xsi:type="couchdb_:TextField" name="citizen" value="Heavenly city"/>
     </document>
-    <document name="Ash">
+    <document id="cc3d4fdf-0aba-4779-a74c-d54fecbb3762" name="Ash" version="1.3">
       <field xsi:type="couchdb_:TextField" name="full_name" value="Ash"/>
       <field xsi:type="couchdb_:TextField" name="citizen" value="Paleta City"/>
     </document>
-    <document name="Brock">
+    <document id="acd20138-7607-487e-88a3-81f76202ad9a" name="Brock" version="1.2">
       <field xsi:type="couchdb_:TextField" name="full_name" value="Brock"/>
       <field xsi:type="couchdb_:TextField" name="citizen" value="Silver City"/>
     </document>
