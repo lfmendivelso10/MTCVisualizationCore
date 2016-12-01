@@ -42,9 +42,9 @@
 		<echo>Preconfigurando datos de archivos</echo>
 		<delete file="${Result}" failonerror="Clean Data Model" />
 		<delete file="${DataModel}" failonerror="Clean Data Model" />
-		<copy file="./Chain/baseModels/2_visualizationData.xmi" tofile="${DataModel}"/>
+		<copy file="./Chain/baseModels/inputs/2_visualizationData.xmi" tofile="${DataModel}"/>
 		<delete file="${OutputModel}" failonerror="Clean Data Model" />
-		<copy file="./Chain/baseModels/3_visualizationSpecification.xmi" tofile="${OutputModel}"/>
+		<copy file="./Chain/baseModels/inputs/3_visualizationSpecification.xmi" tofile="${OutputModel}"/>
 	</target>
 	
 	<target name="Validation">
